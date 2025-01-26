@@ -136,10 +136,10 @@
                     messageElement.textContent = 'تم إرسال طلب حذف الحساب بنجاح!';
                 } else {
                     messageElement.style.color = 'red';
-                    messageElement.textContent = data.message || 'حدث خطأ أثناء معالجة الطلب.';
+                    messageElement.textContent = data.message || 'تأكد من اسم المستخدم او الباسوورد.';
                 }
             } catch (error) {
-                document.getElementById('message').textContent = 'حدث خطأ أثناء الاتصال بالخادم.';
+                document.getElementById('message').textContent = 'تأكد من اسم المستخدم او الباسوورد.';
             }
         });
     </script>
